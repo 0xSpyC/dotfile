@@ -2,13 +2,13 @@
 
 # install homebrew
 echo "###############################HOMEBREW#################################"
-curl -fsSL https://raw.githubusercontent.com/omimouni/42homebrew/master/install-goinfre.sh | zsh
+curl -fsSL https://raw.githubusercontent.com/omimouni/42homebrew/master/install.sh | zsh
 echo ""
 
 # install jq
-echo "##################################JQ####################################"
-brew install jq
-echo ""
+#echo "##################################JQ####################################"
+#brew install jq
+#echo ""
 
 # cloning work
 #echo "#################################WORK###################################"
@@ -16,9 +16,9 @@ echo ""
 #echo""
 
 # install node
-echo "#################################NODE###################################"
-brew install node
-echo""
+#echo "#################################NODE###################################"
+#brew install node
+#echo""
 
 # install vscode
 #echo "################################VSCODE##################################"
@@ -58,16 +58,16 @@ echo""
 # install jetbrains mono
 echo "###############################JETBRAINS#################################"
 brew tap homebrew/cask-fonts
-brew install --cask font-jetbrains-mono
+brew install --cask font-jetbrains-mono-nerd-font
 echo ""
 
 # install code command in PATH
 # echo "##### INSTALLING CODE COMMAND IN PATH"
-cat << EOF >> ~/.zshrc
-Add Visual Studio Code (code)
-export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-EOF
-echo ""
+#cat << EOF >> ~/.zshrc
+#Add Visual Studio Code (code)
+#export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+#EOF
+#echo ""
 
 # install valgrind
 echo "###### INSTALLING VALGRIND ######"
