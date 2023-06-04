@@ -14,6 +14,10 @@ lvim.format_on_save = {
   pattern = { "*.lua", "*.c", "*.cpp", "*.h", "*.hpp" },
   timeout = 1000,
 }
+
+--42 Header
+vim.g.user42 = "rtazlaou"
+vim.g.mail42 = "rtazlaou@student.42mulhouse.fr"
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
 
@@ -79,14 +83,14 @@ formatters.setup {
     extra_args = { "--style=Google" },
   },
 }
-local linters = require "lvim.lsp.null-ls.linters"
-linters.setup {
-  {
-    filetypes = { "cpp" },
-    command = "cpplint",
-    args = { "--quiet", "--filter=-build/include_order", "--linelength=120", vim.api.nvim_buf_get_name(0) },
-  },
-}
+-- local linters = require "lvim.lsp.null-ls.linters"
+-- linters.setup {
+--   {
+--     filetypes = { "cpp" },
+--     command = "cpplint",
+--     args = { "--quiet", "--filter=-build/include_order", "--linelength=120", vim.api.nvim_buf_get_name(0) },
+--   },
+-- }
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.offsetEncoding = { "utf-16" }
